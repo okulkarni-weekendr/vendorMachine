@@ -3,18 +3,26 @@ package com.vendorMachine;
 import java.util.List;
 import java.util.Map;
 
-public class vendorMachine {
+public class VendingMachine extends Machine implements MachineInterface {
 	private int id;
 	private Map<Integer, String> items;
 	private List<String> availableItems;
 	private String type;
+	private enum Drinks {
+		COKE,
+		PEPSI,
+		SODA
+	}
 
-//	public vendorMachine(){
-//
-//	}
+	@Override
+	public void details() {
+		System.out.println("This is a vending machine");
+	}
 
-	public int getId() {
-		return id;
+	@Override
+	public String getId() {
+		System.out.println("Id registered is: " + id);
+		return Integer.toString(id) ;
 	}
 
 	public void setId(int id) {
@@ -33,15 +41,16 @@ public class vendorMachine {
 		return availableItems;
 	}
 
-	public void setAvailableItems(List<String> availableItems) {
-		this.availableItems = availableItems;
-	}
-
 	public String getType() {
 		return type;
 	}
 
 	public void setType(String type) {
 		this.type = type;
+	}
+
+	@Override
+	public void printWelcomeMessage() {
+		System.out.println("This machine is for \n" + Drinks.COKE + Drinks.PEPSI + Drinks.SODA);
 	}
 }
