@@ -1,9 +1,11 @@
-package com.vendorMachine;
+package com.vendorMachine.domain;
+
+import com.vendorMachine.MachineInterface;
 
 /**
  * Created by omkulk on 7/26/2017.
  */
-public class ATMMachine extends Machine implements MachineInterface{
+public class ATMMachine extends Machine implements MachineInterface {
 
     @Override
     public void details() {

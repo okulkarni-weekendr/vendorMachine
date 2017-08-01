@@ -1,4 +1,4 @@
-package com.vendorMachine;
+package com.vendorMachine.domain;
 
 import java.util.List;
 
@@ -7,9 +7,9 @@ import java.util.List;
  */
 public abstract class Machine {
 
-    String id;
-    List<Integer> acceptableCurrency;
-    List<?> availableItems;
+    private String id;
+    private List<Integer> acceptableCurrency;
+    private List<?> availableItems;
 
     public boolean isEmpty() {
         return false;

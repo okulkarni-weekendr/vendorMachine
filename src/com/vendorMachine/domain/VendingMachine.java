@@ -1,4 +1,6 @@
-package com.vendorMachine;
+package com.vendorMachine.domain;
+
+import com.vendorMachine.MachineInterface;
 
 import java.util.List;
 import java.util.Map;

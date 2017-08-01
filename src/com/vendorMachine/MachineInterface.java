@@ -10,5 +10,5 @@ public interface MachineInterface {
 //    Bucket<Option, List<Amount>> collectItemAndChange();
 //    void reset();
 
-    public void printWelcomeMessage();
+    void printWelcomeMessage();
 }
