@@ -1,14 +1,17 @@
-package com.vendorMachine.dao;
-import com.vendorMachine.domain.Customer;
+package com.vendorMachine.domain.dao;
 import com.vendorMachine.domain.Users.GasStationCustomer;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class GasStationCustomerDAO implements CustomerDAOInterface {
 
-    @Override
+	@Override
+	public boolean saveCustomer(Object customer) {
+		System.out.println("Saving Customer" + customer);
+		return true;
+	}
+
+	@Override
     public List<GasStationCustomer> findAll() {
         return null;
     }

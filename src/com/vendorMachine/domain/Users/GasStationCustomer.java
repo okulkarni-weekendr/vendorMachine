@@ -65,4 +65,13 @@ public class GasStationCustomer extends Customer {
     public List<Integer> findExactChange(Machine machine) {
         return null;
     }
+
+    @Override
+    public String toString() {
+        return "GasStationCustomer{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                '}';
+    }
 }
