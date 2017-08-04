@@ -2,8 +2,17 @@ package com.vendorMachine.Analytics;
 
 public class ReportFormatter{
 
-	public ReportFormatter(Object object, FormatType formatType){
+	String formattedOutput;
 
+	public ReportFormatter(Object object, FormatType formatType){
+		switch(formatType){
+			case XML:
+				formattedOutput = convertObjectToXML(object);
+				break;
+			case CSV:
+				formattedOutput = convertObjectToCSV(object);
+				break;
+		}
 	}
 
 	private String convertObjectToXML(Object object){
@@ -13,4 +22,9 @@ public class ReportFormatter{
 	private String convertObjectToCSV(Object object){
 		return "CSV: ,,," + object.toString()+ ",,,";
 	}
+
+	protected String getFormattedOutput(){
+		return formattedOutput;
+	}
+
 }

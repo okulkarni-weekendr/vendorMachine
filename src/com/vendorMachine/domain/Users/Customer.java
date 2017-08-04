@@ -1,4 +1,6 @@
-package com.vendorMachine.domain;
+package com.vendorMachine.domain.Users;
+
+import com.vendorMachine.domain.Machine;
 
 import java.util.List;
 import java.util.Map;

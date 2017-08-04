@@ -1,6 +1,5 @@
 package com.vendorMachine.domain.Users;
 
-import com.vendorMachine.domain.Customer;
 import com.vendorMachine.domain.Machine;
 
 import java.util.List;

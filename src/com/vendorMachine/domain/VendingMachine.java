@@ -1,11 +1,9 @@
 package com.vendorMachine.domain;
 
-import com.vendorMachine.MachineInterface;
-
 import java.util.List;
 import java.util.Map;
 
-public class VendingMachine extends Machine implements MachineInterface {
+public class VendingMachine extends Machine{
 	private int id;
 	private Map<Integer, String> items;
 	private List<String> availableItems;
@@ -51,7 +49,6 @@ public class VendingMachine extends Machine implements MachineInterface {
 		this.type = type;
 	}
 
-	@Override
 	public void printWelcomeMessage() {
 		System.out.println("This machine is for \n" + Drinks.COKE + Drinks.PEPSI + Drinks.SODA);
 	}

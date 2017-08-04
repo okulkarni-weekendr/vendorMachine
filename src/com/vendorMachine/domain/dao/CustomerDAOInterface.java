@@ -1,7 +1,5 @@
 package com.vendorMachine.domain.dao;
 
-import com.vendorMachine.domain.Customer;
-
 import java.util.List;
 
 public interface CustomerDAOInterface<T> {
