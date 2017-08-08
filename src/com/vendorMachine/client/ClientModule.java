@@ -14,18 +14,18 @@ public class ClientModule {
 		printCustomerReport(gasStationCustomer, FormatType.XML);
 	}
 
-	public static void addNewCustomer(Customer customer){
+	private static void addNewCustomer(Customer customer){
 		GasStationCustomerDAO gasStationCustomerDAO = new GasStationCustomerDAO();
 		gasStationCustomerDAO.saveCustomer(customer);
 	}
 
-	public static boolean deleteCustomer(Customer customer){
+	private static boolean deleteCustomer(Customer customer){
 		GasStationCustomerDAO gasStationCustomerDAO = new GasStationCustomerDAO();
 		boolean val = gasStationCustomerDAO.deleteCustomer(customer);
 		return val;
 	}
 
-	public static void printCustomerReport(GasStationCustomer gasStationCustomer, FormatType format){
+	private static void printCustomerReport(GasStationCustomer gasStationCustomer, FormatType format){
 		CustomerReportFormatter formatter = new CustomerReportFormatter(gasStationCustomer, format);
 		System.out.println(formatter.getFormattedCustomer());
 	}

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/scala_stuff/scala_stuff.iml" filepath="$PROJECT_DIR$/scala_stuff/scala_stuff.iml" />
       <module fileurl="file://$PROJECT_DIR$/vendorMachine.iml" filepath="$PROJECT_DIR$/vendorMachine.iml" />
     </modules>
   </component>
