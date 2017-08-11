@@ -1,7 +1,14 @@
 package cashflow.scala
 
+<<<<<<< Updated upstream
 import java.time.{LocalDate, LocalDateTime}
 import java.time.temporal.TemporalAmount
+=======
+
+
+
+class Cashflow {
+>>>>>>> Stashed changes
 
 class Cashflow(val amount: Double, val currency: String, val due: LocalDateTime){
   def this(amount: Double, due: LocalDateTime) = this(amount, "USD", due)

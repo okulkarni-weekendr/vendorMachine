@@ -1,5 +1,5 @@
-package com.vendorMachine.domain.dao;
-import com.vendorMachine.domain.Users.GasStationCustomer;
+package com.vendorMachine.dao;
+import com.vendorMachine.domain.Users.Customer.GasStationCustomer;
 
 import java.util.List;
 

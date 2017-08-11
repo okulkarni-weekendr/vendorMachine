@@ -1,4 +1,4 @@
-package com.vendorMachine.domain;
+package com.vendorMachine.domain.Users.Machine;
 
 
 

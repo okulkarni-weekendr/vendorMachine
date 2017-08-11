@@ -2,9 +2,9 @@ package com.vendorMachine.client;
 
 import com.vendorMachine.Analytics.CustomerReportFormatter;
 import com.vendorMachine.Analytics.FormatType;
-import com.vendorMachine.domain.dao.GasStationCustomerDAO;
-import com.vendorMachine.domain.Users.Customer;
-import com.vendorMachine.domain.Users.GasStationCustomer;
+import com.vendorMachine.dao.GasStationCustomerDAO;
+import com.vendorMachine.domain.Users.Customer.Customer;
+import com.vendorMachine.domain.Users.Customer.GasStationCustomer;
 
 public class ClientModule {
 

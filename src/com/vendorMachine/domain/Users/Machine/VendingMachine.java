@@ -1,9 +1,11 @@
-package com.vendorMachine.domain;
+package com.vendorMachine.domain.Users.Machine;
+
+import com.vendorMachine.domain.Users.Machine.Machine;
 
 import java.util.List;
 import java.util.Map;
 
-public class VendingMachine extends Machine{
+public class VendingMachine extends Machine {
 	private int id;
 	private Map<Integer, String> items;
 	private List<String> availableItems;

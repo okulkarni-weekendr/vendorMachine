@@ -1,4 +1,4 @@
-package com.vendorMachine.domain.dao;
+package com.vendorMachine.dao;
 
 import java.util.List;
 
