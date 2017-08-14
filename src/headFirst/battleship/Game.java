@@ -6,6 +6,7 @@ import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Game {
+<<<<<<< HEAD
     public static void main(String[] args){
         DotCom dot = new DotCom();
         Scanner sc = new Scanner(System.in);
@@ -49,3 +50,27 @@ public class Game {
 }
 
 
+=======
+	public static void main(String[] args) {
+		int[] locationCells = new int[10];
+		int numOfHits = 0;
+		int x = ThreadLocalRandom.current().nextInt(1, 8);
+		String str = String.valueOf(x);
+		if(checkYourself(str, locationCells)) {
+		}
+	}
+
+	static void setLocationCells(int[] locationCells){
+
+	}
+
+	private static String checkYourself(String s, Integer[] locationCell) {
+		for(int i : locationCell) {
+			if (Integer.parseInt(s) == i) {
+				return "Hit";
+			} else return "miss";
+		}
+	}
+}
+
+>>>>>>> 7ce338833da34cd40d08bbbe03f244d8c7e6a09c
