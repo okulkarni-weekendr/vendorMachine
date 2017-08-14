@@ -1,13 +1,16 @@
 package headFirst.battleship;
 
-public class User {
-    private int[] guess;
+import java.util.concurrent.ThreadLocalRandom;
 
-    public int[] getGuess() {
+public class User {
+    private int guess;
+
+    public int getGuess() {
         return guess;
     }
 
-    public void setGuess(int[] guess) {
-        this.guess = guess;
+    public void setGuess() {
+        int rand = ThreadLocalRandom.current().nextInt(1,10);
+        this.guess = rand;
     }
 }
